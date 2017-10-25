@@ -6,7 +6,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.MainActivity">
+    tools:context=".activities.MainActivity"
+    android:background="#FFF333">
+
 
 
     <LinearLayout
@@ -20,27 +22,28 @@
             android:id="@+id/buttonPostIndent"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:text="Post Indent"/>
+            android:text="Post Indent"
+            android:layout_margin="8dp"/>
 
         <Button
             android:id="@+id/buttonMyBalance"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_margin="8dp"
             android:text="Know My Balance"/>
 
         <Button
             android:id="@+id/buttonMyInvoice"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_margin="8dp"
             android:text="My Invoice"/>
 
         <Button
             android:id="@+id/buttonMyLedger"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_margin="8dp"
             android:text="My Ledger"/>
 
         <Button

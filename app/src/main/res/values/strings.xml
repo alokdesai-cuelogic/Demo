@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">DemoPP</string>
+    <string name="app_name">Smart Pump</string>
+    <string-array name="pump_name">
+        <item>Select</item>
+        <item>Jasmin Highway</item>
+        <item>Nishit Highway Services</item>
+        <item>SP Fuels</item>
+    </string-array>
+    <string-array name="vehicle_no">
+        <item>Select</item>
+        <item>MH31DT5331</item>
+        <item>MH40R5475</item>
+        <item>MH31AR7300</item>
+    </string-array>
+
 </resources>

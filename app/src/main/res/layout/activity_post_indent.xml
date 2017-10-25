@@ -4,26 +4,56 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:gravity="center_vertical">
+            android:gravity="center_horizontal">
 
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Vehicle No."/>
+                android:text="Pump Name"
+                android:textColor="#3336FF"
+                android:textSize="17sp"/>
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.7"
+            <Spinner
+                android:id="@+id/spinnerPumpName"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
                 android:padding="5dp"
+                android:entries="@array/pump_name"
+                android:background="@drawable/edit_text_border"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Vehicle No."
+                android:textColor="#3336FF"
+                android:textSize="17sp"/>
+
+            <Spinner
+                android:id="@+id/spinnerVehicleNo"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:entries="@array/vehicle_no"
                 android:background="@drawable/edit_text_border"/>
 
         </LinearLayout>
@@ -32,18 +62,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:gravity="center_vertical">
+            android:gravity="center_horizontal">
 
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Quantity"/>
+                android:text="Quantity"
+                android:textColor="#3336FF"
+                android:textSize="17sp"/>
 
             <EditText
                 android:id="@+id/editTextQuantity"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
+                android:inputType="number"
                 android:background="@drawable/edit_text_border"/>
 
         </LinearLayout>
@@ -62,6 +95,7 @@
                 android:id="@+id/checkBoxTankFull"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
                 android:text="Full Tank"/>
 
         </LinearLayout>
@@ -70,17 +104,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:gravity="center_vertical">
+            android:gravity="center_horizontal">
 
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Amount"/>
+                android:text="Amount"
+                android:textColor="#3336FF"
+                android:textSize="17sp"/>
 
             <EditText
-                android:layout_width="match_parent"
+                android:id="@+id/editTextAmount"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
+                android:inputType="number"
                 android:background="@drawable/edit_text_border"/>
 
         </LinearLayout>
@@ -89,26 +127,31 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:gravity="center_vertical">
+            android:gravity="center_horizontal">
 
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Driver Cash"/>
+                android:text="Driver Cash"
+                android:textColor="#3336FF"
+                android:textSize="17sp"/>
 
             <EditText
-                android:layout_width="match_parent"
+                android:id="@+id/editTextDriverCash"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
+                android:inputType="number"
                 android:background="@drawable/edit_text_border"/>
 
         </LinearLayout>
 
         <Button
-            android:layout_width="wrap_content"
+            android:id="@+id/buttonSubmit"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="10dp"
+            android:layout_margin="15dp"
             android:text="Submit"/>
 
     </LinearLayout>
